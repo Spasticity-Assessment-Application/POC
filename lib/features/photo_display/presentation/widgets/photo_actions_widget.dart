@@ -35,13 +35,12 @@ class PhotoActionsWidget extends StatelessWidget {
               ),
               AppActionButton(
                 onPressed: () {
-                  // TODO: Implement photo analysis
-                  ScaffoldMessenger.of(context).showSnackBar(
-                    const SnackBar(
-                      content: Text('Photo analysis not implemented yet'),
-                      backgroundColor: Colors.blue,
-                    ),
-                  );
+                  final photoPath = context.read<AppPhotoCubit>().currentPhotoPath;
+                  if (photoPath == null) return;
+
+                  //j'ai juste mit des valeurs randoms pour tester
+                  context.read<AppPhotoCubit>().analyzePhoto("Classe A", 0.87);
+                  context.push('/result');
                 },
                 icon: Icons.analytics,
                 label: 'Analyze Photo',
