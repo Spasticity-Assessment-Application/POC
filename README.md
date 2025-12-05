@@ -1,10 +1,18 @@
 # POC - Spasticity Assessment Application
 
-## 🛠️ Installation sans IDE (ligne de commande)
+## 📱 About the Project
 
-Ce guide explique comment installer et configurer le projet sans utiliser d'IDE graphique. Toutes les étapes peuvent être réalisées dans un terminal.
+This repository contains a Proof of Concept (POC) developed as part of a final year project for the Bachelor's degree in Software Engineering at École de technologie supérieure in Montreal.
 
-### 1. Installer Flutter
+The goal is to demonstrate technical feasibility and validate technology choices before full-scale development.
+
+This POC focuses on spasticity assessment through a mobile application, using Flutter and lightweight artificial intelligence models (MobileNetV2), to illustrate the potential of the proposed solution.
+
+## 🛠️ Installation without IDE (Command Line)
+
+This guide explains how to install and configure the project without using a graphical IDE. All steps can be performed in a terminal.
+
+### 1. Install Flutter
 
 #### macOS
 
@@ -12,7 +20,7 @@ Ce guide explique comment installer et configurer le projet sans utiliser d'IDE 
 brew install --cask flutter
 ```
 
-Ou, pour une installation manuelle :
+Or, for manual installation:
 
 ```bash
 git clone https://github.com/flutter/flutter.git -b stable
@@ -22,34 +30,34 @@ source ~/.zshrc
 
 #### Windows
 
-Téléchargez Flutter sur : https://docs.flutter.dev/get-started/install/windows
+Download Flutter from: https://docs.flutter.dev/get-started/install/windows
 
 #### Linux
 
-Voir : https://docs.flutter.dev/get-started/install/linux
+See: https://docs.flutter.dev/get-started/install/linux
 
-### 2. Ajouter Flutter au PATH
+### 2. Add Flutter to PATH
 
-Assurez-vous que le dossier `flutter/bin` est dans votre variable d'environnement PATH.
+Make sure the `flutter/bin` folder is in your PATH environment variable.
 
-### 3. Vérifier l'installation
+### 3. Verify Installation
 
 ```bash
 flutter doctor
 ```
 
-Suivez les instructions pour corriger les éventuels problèmes (Android Studio n'est pas obligatoire, mais il faut au moins un SDK Android ou Xcode pour iOS).
+Follow the instructions to fix any issues (Android Studio is not required, but you need at least an Android SDK or Xcode for iOS).
 
-### 4. (Optionnel) Installer Visual Studio Code
+### 4. (Optional) Install Visual Studio Code
 
-VS Code est recommandé pour le confort, mais non obligatoire. Téléchargez-le sur : https://code.visualstudio.com/
+VS Code is recommended for convenience, but not required. Download it from: https://code.visualstudio.com/
 
-#### Extensions utiles (dans VS Code)
+#### Useful Extensions (in VS Code)
 
 - Flutter
 - Dart
 
-### 5. Cloner et lancer le projet
+### 5. Clone and Run the Project
 
 ```bash
 git clone https://github.com/Spasticity-Assessment-Application/POC.git
@@ -59,12 +67,6 @@ flutter run
 ```
 
 ---
-
-Proof of Concept (POC) of a mobile application using a lightweight AI model to validate the feasibility of the spasticity assessment application.
-
-## 📱 About the Project
-
-This Flutter application serves as a POC to demonstrate the feasibility of a mobile spasticity assessment application using lightweight artificial intelligence models. The goal is to validate technical concepts before developing the complete application.
 
 ## 🏗️ Project Architecture
 
